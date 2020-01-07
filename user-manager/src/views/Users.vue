@@ -1,5 +1,5 @@
 <template>
-    <Users />
+    <Users v-bind:users="usersList" />
 </template>
 
 <script>
@@ -8,6 +8,11 @@ import Users from "@/components/Users.vue";
 
 export default {
     name: "home",
+    data: function() {
+        return {
+            usersList: ["Ash", "Brittany", "Jack", "Logan"]
+        };
+    },
     components: {
         Users
     }
