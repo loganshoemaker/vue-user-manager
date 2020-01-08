@@ -46,7 +46,7 @@
                 "off"
             ],
             "vue/script-indent": [
-                "none",
+                "warn",
                 2,
                 {
                     "baseIndent": 1
