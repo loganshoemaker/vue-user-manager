@@ -1,7 +1,7 @@
 <template>
     <div>
         <Users v-bind:users="usersList" />
-        <Button />
+        <Button @button-clicked="handleClicked" />
     </div>
 </template>
 
@@ -20,6 +20,11 @@ export default {
     components: {
         Users,
         Button
+    },
+    methods: {
+        handleClicked: function() {
+            this.usersList.push("Some rando");
+        }
     }
 };
 </script>

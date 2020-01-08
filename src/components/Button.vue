@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="clicked">Add User</button>
+    <button @click="clicked">Add User</button>
 </template>
 
 <script lang="ts">
@@ -8,7 +8,7 @@ export default Vue.extend({
     name: "Button",
     methods: {
         clicked: function() {
-            console.log("You clicked me");
+            this.$emit("button-clicked");
         }
     }
 });
