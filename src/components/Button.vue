@@ -1,15 +1,15 @@
-<templat>
-    <button>Add User</button>
+<template>
+    <button v-on:click="clicked">Add User</button>
 </template>
-
 
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
     name: "Button",
-    props: {
-        handleOnClick: () => any,
-        text: string,
+    methods: {
+        clicked: function() {
+            console.log("You clicked me");
+        }
     }
 });
 </script>

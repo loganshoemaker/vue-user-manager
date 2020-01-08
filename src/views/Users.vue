@@ -1,10 +1,14 @@
 <template>
-    <Users v-bind:users="usersList" />
+    <div>
+        <Users v-bind:users="usersList" />
+        <Button />
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Users from "@/components/Users.vue";
+import Button from "@/components/Button.vue";
 
 export default {
     name: "home",
@@ -14,7 +18,8 @@ export default {
         };
     },
     components: {
-        Users
+        Users,
+        Button
     }
 };
 </script>

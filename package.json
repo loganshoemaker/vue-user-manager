@@ -42,8 +42,11 @@
             "@vue/typescript"
         ],
         "rules": {
+            "no-console": [
+                "off"
+            ],
             "vue/script-indent": [
-                "warning",
+                "off",
                 2,
                 {
                     "baseIndent": 1
