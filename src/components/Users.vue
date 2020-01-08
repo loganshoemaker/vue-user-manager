@@ -4,7 +4,6 @@
         <h3 v-for="(user, index) in users" v-bind:key="index">
             {{ user }}
         </h3>
-        <button>Add User</button>
     </div>
 </template>
 
